@@ -1,0 +1,35 @@
+﻿<Window x:Class="NetworkOfGroceryStores.SaleProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetworkOfGroceryStores"
+        mc:Ignorable="d"
+        Title="Інформація про акційні товари" Height="523.637" Width="912.545" Icon="UI_image/Picasa .ico">
+    <Grid Margin="0,0,2,-7">
+        
+        <Label x:Name="label" Content="Акційні товари" HorizontalAlignment="Left" Margin="295,33,0,0" VerticalAlignment="Top" FontFamily="Bodoni MT Black" FontSize="48" Background="{x:Null}" />
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="136" Margin="35,119,0,0" VerticalAlignment="Top" Width="170" Source="UI_image/searchSale.png"/>
+        <ComboBox x:Name="MethodSearchSalelistBox" HorizontalAlignment="Left" Height="42" Margin="243,119,0,0" VerticalAlignment="Top" Width="471" Background="#FFA5F0AF" FontFamily="Bookman Old Style" FontSize="22">
+            <ComboBoxItem>Акції місяця</ComboBoxItem>
+            <ComboBoxItem>Акції тижня</ComboBoxItem>
+            <ComboBoxItem>Акції дня</ComboBoxItem>
+            <ComboBoxItem>Майбутні акції</ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="ProductOfSale_dataGrid" HorizontalAlignment="Left" Height="187" Margin="35,277,0,0" VerticalAlignment="Top" Width="828" Background="#FFFFFDFD" VerticalContentAlignment="Center" TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display" HorizontalContentAlignment="Center" VerticalScrollBarVisibility="Visible" FontFamily="Bookman Old Style" FontSize="18" AlternatingRowBackground="#FFF0BD13">
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Header="№"  Foreground="{x:Null}" Width="30" />
+                <DataGridTextColumn Header="Назва продукту"  Width="270"/>
+                <DataGridTextColumn Header="Виробник"  Width="220" />
+                <DataGridTextColumn Header="Ціна"  Width="100" />
+                <DataGridTextColumn Header="Кількість"  Width="100" />
+                <DataGridTextColumn Header="Розмір" Width="92"/>
+            </DataGrid.Columns>-->
+        </DataGrid>
+        <Button x:Name="SearchNow_button" Content="Пошук" HorizontalAlignment="Left" Height="53" Margin="243,184,0,0" VerticalAlignment="Top" Width="471" FontFamily="Bookman Old Style" FontSize="36" Click="SearchNow_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/ButtonSubtypes/4.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

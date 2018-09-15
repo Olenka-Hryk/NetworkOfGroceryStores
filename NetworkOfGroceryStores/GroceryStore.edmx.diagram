@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="30920129b0644228b8a99993632a225b" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Cheque" Width="1.5" PointX="15" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Customers" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Invoice_Products" Width="1.5" PointX="8.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.InvoiceForGoods" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Orders" Width="1.5" PointX="15" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Products" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Provisor" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Reserve" Width="1.5" PointX="12.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Sale" Width="1.5" PointX="12.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Sales_Reserve_Invoice" Width="1.5" PointX="10.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.SalesInvoice" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Store" Width="1.5" PointX="10.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Subtypes" Width="1.5" PointX="3.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Timetable" Width="1.5" PointX="6" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.Workers" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.vCheque" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_NetworkOfGroceryStoresModel1.vProductOfSubtypes" Width="1.5" PointX="8.75" PointY="11.625" IsExpanded="true" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Cheque_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Cheque_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Cheque_Reserve" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Cheque_Sale" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Invoice_Products_InvoiceForGoods" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Invoice_Products_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Sales_Reserve_Invoice_Invoice_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_InvoiceForGoods_Provisor" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_InvoiceForGoods_Workers" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_SalesInvoice_InvoiceForGoods" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Orders_Reserve" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Orders_Sale" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Orders_Workers" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Products_Subtypes" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Reserve_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Reserve_Sales_Reserve_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Reserve_Store" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Sales_Reserve_Invoice_SalesInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_SalesInvoice_Workers" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Timetable_Store" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_NetworkOfGroceryStoresModel1.FK_Timetable_Workers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

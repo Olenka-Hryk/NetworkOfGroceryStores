@@ -1,0 +1,13 @@
+﻿<Window x:Class="NetworkOfGroceryStores.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetworkOfGroceryStores"
+        mc:Ignorable="d" 
+        Title="Network of grocery stores 1.0 2017" Height="350" Width="525" Foreground="{x:Null}" Visibility="Visible" Cursor="Wait" Background="{x:Null}" Icon="UI_image/Picasa .ico" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow" Loaded="Window_Loaded">
+    <Grid>
+        <Rectangle Fill="White"/>
+        <Image Source="UI_image/fon.jpg"/>
+    </Grid>
+</Window>

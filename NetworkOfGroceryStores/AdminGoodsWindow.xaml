@@ -1,0 +1,48 @@
+﻿<Window x:Class="NetworkOfGroceryStores.AdminGoodsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetworkOfGroceryStores"
+        mc:Ignorable="d"
+        Title="Інформація про продукти" Height="570.001" Width="980.727" Icon="UI_image/Picasa .ico" Loaded="Window_Loaded">
+    <Grid Margin="0,0,0,-7" HorizontalAlignment="Left" Width="971">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="187*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="168*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Інформація про продукти" HorizontalAlignment="Left" Margin="0,37,0,0" VerticalAlignment="Top" FontFamily="Bodoni MT Black" FontSize="48" Background="{x:Null}" Grid.Column="1" Grid.ColumnSpan="5" Height="68" Width="666" />
+        <DataGrid x:Name="GoodsShop_dataGrid" Height="207" Margin="30,131,27,0" VerticalAlignment="Top" Background="#FFFFFDFD" VerticalContentAlignment="Center" TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display" HorizontalContentAlignment="Center" VerticalScrollBarVisibility="Visible" FontFamily="Bookman Old Style" FontSize="18" Grid.ColumnSpan="6" AlternatingRowBackground="#FF21DFF1">
+
+        </DataGrid>
+        <Button x:Name="AddGoods_button" Grid.Column="1" HorizontalAlignment="Left" Height="138" Grid.Row="1" VerticalAlignment="Top" Width="161" BorderBrush="{x:Null}" Click="AddWorkers_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/addproduct.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="EditGoods_button" Grid.Column="2" HorizontalAlignment="Left" Height="138" Grid.Row="1" VerticalAlignment="Top" Width="154" BorderBrush="{x:Null}" Margin="5,0,0,0" Click="EditWorkers_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/editproduct.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="DeleteWorkers_button" Grid.Column="3" HorizontalAlignment="Left" Height="138" Grid.Row="1" VerticalAlignment="Top" Width="158" BorderBrush="{x:Null}" Margin="3,0,0,0" Click="DeleteWorkers_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/deleteproduct.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="SearchGoods_button" Grid.Column="4" HorizontalAlignment="Left" Height="138" Grid.Row="1" VerticalAlignment="Top" Width="161" BorderBrush="{x:Null}" Click="SearchWorker_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/Prodsearch.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

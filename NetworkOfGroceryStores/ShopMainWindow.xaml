@@ -1,0 +1,201 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetworkOfGroceryStores"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="NetworkOfGroceryStores.ShopMainWindow"
+        mc:Ignorable="d"
+        Title="Network of grocery stores 1.0 2017" Height="768" Width="1366" Icon="UI_image/Picasa .ico" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="370*"/>
+            <RowDefinition Height="242*"/>
+            <RowDefinition Height="125*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="121*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="194*"/>
+            <ColumnDefinition Width="130*"/>
+        </Grid.ColumnDefinitions>
+        <ToolBarPanel HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="145" Grid.ColumnSpan="2">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="83" Width="135" Source="UI_image/emblema.png"/>
+        </ToolBarPanel>
+        <Button x:Name="SubtypesGoods_button"  Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="74" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="SubtypesGoods_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/goods.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="SearchGoods_button" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="74" BorderBrush="{x:Null}" Click="SearchGoods_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/search.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Sale_button" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="74" BorderBrush="{x:Null}" Click="Sale_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/searchSale.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="DataWork_button" Grid.Column="5" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/datework.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Info_button" Grid.Column="6" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Click="Info_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/info.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Workers_button" Grid.Column="7" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Click="Workers_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/user_worker.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Customers_button" Grid.Column="8" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Click="Customers_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/user_customer.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Profile_button" Grid.Column="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="74" BorderBrush="{x:Null}" Click="Profile_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/user.png"/>
+            </Button.Background>
+        </Button>
+
+
+        <GroupBox x:Name="InformationDetails" Header="Додаткові відомості:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="7" Height="166" Width="829" FontFamily="Bookman Old Style" FontSize="18" Margin="19,98,0,0">
+            <Grid HorizontalAlignment="Left" Margin="3,-17,-6,-18" Width="820">
+                <Label Content="№ :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,19,0,0"/>
+                <TextBox x:Name="Nomer" IsReadOnly="True" HorizontalAlignment="Left" Height="29" Margin="142,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Background="#FFEFFBEC"/>
+                <Label Content="Касир :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,48,0,0"/>
+                <TextBox x:Name="Cashier" IsReadOnly="True" HorizontalAlignment="Left" Height="29" Margin="142,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Background="#FFEFFBEC"/>
+                <Label Content="Дата :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,85,0,0" RenderTransformOrigin="0.983,0.793"/>
+                <TextBox x:Name="DataTime1" IsReadOnly="True" HorizontalAlignment="Left" Height="27" Margin="142,0,0,59" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="255" Background="#FFEFFBEC"/>
+                <Label Content="Клієнт :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="437,17,0,0"/>
+                <TextBox x:Name="CustomerName" HorizontalAlignment="Left" Height="27" Margin="537,0,0,127" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="255" Background="#FFEFFBEC" KeyDown="CustomerName_KeyDown"/>
+                <Label Content="Магазин :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,119,0,0"/>
+                <TextBox x:Name="NameStore" IsReadOnly="True" HorizontalAlignment="Left" Height="27" Margin="142,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Background="#FFEFFBEC"/>
+                <Label Content="Адреса :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="437,119,0,0"/>
+                <TextBox x:Name="AdressStore" IsReadOnly="True" HorizontalAlignment="Left" Height="27" Margin="537,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Background="#FFEFFBEC"/>
+            </Grid>
+        </GroupBox>
+
+
+        <GroupBox x:Name="StoreDetails" Grid.ColumnSpan="7" Header="Деталі магазину:" HorizontalAlignment="Left" Height="311" Margin="19,269,0,0" VerticalAlignment="Top" Width="830" Grid.RowSpan="2" FontFamily="Bookman Old Style" FontSize="18">
+            <Grid Grid.ColumnSpan="7" HorizontalAlignment="Left" Height="308" Margin="-9,-21,-2,-4" Grid.RowSpan="2" VerticalAlignment="Top" Width="829">
+                <Label Content="№ :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,26,0,0" Background="{x:Null}" Foreground="#FF5E58E4"/>
+                <TextBox x:Name="ID_product" HorizontalAlignment="Left" Height="27" Margin="20,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" Background="#FFCDF4FF"/>
+                <Label Content="Назва товару :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95,26,0,0" Background="{x:Null}" Foreground="#FF5E58E4"/>
+                <TextBox x:Name="Name_product" HorizontalAlignment="Left" Height="27" Margin="74,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Background="#FFCDF4FF" TextChanged="Name_product_TextChanged" KeyDown="Name_product_KeyDown"/>
+                <Label Content="Виробник :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="278,26,0,0" Background="{x:Null}" Foreground="#FF5E58E4"/>
+                <TextBox x:Name="Firm_product" HorizontalAlignment="Left" Height="27" Margin="245,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Background="#FFCDF4FF"/>
+                <Label Content="Ціна :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="427,26,0,0" Background="{x:Null}" Foreground="#FF5E58E4"/>
+                <TextBox x:Name="Price_product" HorizontalAlignment="Left" Height="27" Margin="414,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Background="#FFCDF4FF"/>
+                <Label Content="Кількість :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="529,26,0,0" Background="{x:Null}" Foreground="#FF5E58E4"/>
+                <TextBox x:Name="Quantity_product" HorizontalAlignment="Left" Height="27" Margin="504,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFCDF4FF" KeyDown="Quantity_product_KeyDown" TextChanged="Quantity_product_TextChanged"/>
+                <Label Content="Загальна сума :" FontFamily="Bookman Old Style" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="658,26,0,0" Background="{x:Null}" Foreground="#FF5E58E4"/>
+                <TextBox x:Name="Summery_product" HorizontalAlignment="Left" Height="27" Margin="653,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FFCDF4FF"/>
+                <DataGrid x:Name="ShopGoods_dataGrid" HorizontalAlignment="Left" Margin="20,101,0,0" VerticalAlignment="Top" Height="49" Width="774" Background="#FFFFFDFD" VerticalContentAlignment="Stretch" TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display" HorizontalContentAlignment="Stretch" FontSize="14">
+                    <!--<DataGrid.Columns>
+                        <DataGridTextColumn Header="№"  Foreground="{x:Null}" Width="30" />
+                        <DataGridTextColumn Header="Назва товару"  Width="200"/>
+                        <DataGridTextColumn Header="Виробник"  Width="150" />
+                        <DataGridTextColumn Header="Ціна"  Width="100" />
+                        <DataGridTextColumn Header="Кількість"  Width="150" />
+                        <DataGridTextColumn Header="Загальна сума"/>
+                    </DataGrid.Columns>-->
+                </DataGrid>
+                <DataGrid x:Name="ChequeGoods_dataGrid" HorizontalAlignment="Left" Margin="20,155,0,0" VerticalAlignment="Top" Height="143" Width="774" Background="#FFFFFDFD" VerticalContentAlignment="Stretch" TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display" HorizontalContentAlignment="Stretch" FontSize="16" AlternatingRowBackground="#FF18D893" AutoGenerateColumns="False" CanUserAddRows="True" ItemsSource="{Binding TestBinding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="№" IsReadOnly="True" Binding="{Binding Path=Test1}" Width="30"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Назва товару" IsReadOnly="True" Binding="{Binding Path=Test2}" Width="250"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Виробник" IsReadOnly="True"  Binding="{Binding Path=Test3}" Width="195"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Ціна" IsReadOnly="True"  Binding="{Binding Path=Test4}" Width="100"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Кількість" IsReadOnly="True"  Binding="{Binding Path=Test5}" Width="100"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Сума" IsReadOnly="True"  Binding="{Binding Path=Test6}" Width="120"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+
+
+        <GroupBox x:Name="ChequeDetails" Grid.ColumnSpan="4" Grid.Column="6" Header="Чекова інформація:" HorizontalAlignment="Left" Height="425" Margin="92,269,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="468" FontFamily="Bookman Old Style" FontSize="18"/>
+        <Grid Grid.ColumnSpan="4" Grid.Column="6" HorizontalAlignment="Left" Height="437" Margin="91,267,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="484">
+            <Label Content="Номер чеку :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,26,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="113"/>
+            <TextBox x:Name="NomerCheque" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="123,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="Кількість продуктів :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,54,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="171"/>
+            <TextBox x:Name="QuantityProductsALL" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="181,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="Загальна сума :"  FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,82,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="128"/>
+            <TextBox x:Name="Summary" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="143,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="ПДВ (%) :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,110,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="113"/>
+            <TextBox x:Name="PDV" HorizontalAlignment="Left" Height="23" Margin="99,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="349" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="Кінцева сума :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,138,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="128"/>
+            <TextBox x:Name="SummaAll" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="138,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="Знижка (%) :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,166,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="113"/>
+            <TextBox x:Name="Salle" HorizontalAlignment="Left" Height="23" Margin="123,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style" KeyDown="Salle_KeyDown"/>
+            <Label Content="Сума знижки :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,194,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="128"/>
+            <TextBox x:Name="SummaSalle" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="143,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="Баланс картки :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,222,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="138"/>
+            <TextBox x:Name="BalanceCard" HorizontalAlignment="Left" Height="23" Margin="143,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Background="#FFF9FFD3" FlowDirection="RightToLeft" FontSize="18" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="Метод оплати :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,250,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="128"/>
+            <ComboBox x:Name="MethodPaylistBox" HorizontalAlignment="Left" Height="22" Margin="143,250,0,0" VerticalAlignment="Top" Width="305" Background="#FFA5F0AF">
+                <ComboBoxItem>Cash Pay</ComboBoxItem>
+                <ComboBoxItem>Credit card Pay</ComboBoxItem>
+            </ComboBox>
+            <TextBox x:Name="PaySummaForCustomer" HorizontalAlignment="Left" Height="72" Margin="12,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" Background="#FFEAAA00" BorderBrush="#FFDE301E" CaretBrush="#FFD80A0A" FontSize="48" FontWeight="Bold" FontFamily="Bookman Old Style"/>
+            <Label Content="Готівка :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,355,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="128"/>
+            <TextBox x:Name="Hotivka" HorizontalAlignment="Left" Height="23" Margin="99,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="349" Background="#FFF9FFD3" FontSize="20" FontWeight="Bold" FontFamily="Bookman Old Style" KeyDown="Hotivka_KeyDown"/>
+            <Label Content="Решта :" FontFamily="Bookman Old Style" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,383,0,0" Background="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Width="128"/>
+            <TextBox x:Name="Reshta" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="99,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="349" Background="#FFF9FFD3" FontSize="20" FontWeight="Bold" FontStyle="Italic" FontFamily="Bookman Old Style"/>
+
+        </Grid>
+
+
+        <GroupBox x:Name="BarCodeDetails" Grid.Column="6" Header="Штрих-код:" HorizontalAlignment="Left" Margin="92,187,0,0" VerticalAlignment="Top" Grid.ColumnSpan="4" Height="77" Width="468" FontFamily="Bookman Old Style" FontSize="18">
+            <TextBox x:Name="BarCodeText" HorizontalAlignment="Left" Height="34" Margin="51,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Background="#FFE4F1F9" KeyDown="BarCodeText_KeyDown"/>
+        </GroupBox>
+        <GroupBox x:Name="MethodDetails" Grid.ColumnSpan="4" Grid.Column="6" Header="Метод обслуговування:" HorizontalAlignment="Left" Height="73" Margin="92,0,0,183" VerticalAlignment="Bottom" Width="468" FontFamily="Bookman Old Style" FontSize="18">
+            <ComboBox x:Name="MethodlistBox" HorizontalAlignment="Left" Height="27" Margin="48,10,0,0" VerticalAlignment="Top" Width="344" Background="#FFA5F0E2">
+                <ComboBoxItem>За назвою товару</ComboBoxItem>
+                <ComboBoxItem>За штрих-кодом товару</ComboBoxItem>
+            </ComboBox>
+        </GroupBox>
+        <Button x:Name="NewOrder_button" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="84" BorderBrush="{x:Null}" Grid.RowSpan="2" Margin="0,227,0,0" Click="NewOrder_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/addGood.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="AddGoods_button" Grid.Column="2" HorizontalAlignment="Left" Height="72" Grid.Row="2" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Click="AddGoods_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/add.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="DeleteGoods_button" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="72" BorderBrush="{x:Null}" Click="DeleteGoods_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/delete.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="SaveOrder_button" Grid.Column="4" HorizontalAlignment="Left" Height="82" Margin="0,229,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Top" Width="76" BorderBrush="{x:Null}" Click="SaveOrder_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/save.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PrintOrderCheque_button" Grid.Column="5" HorizontalAlignment="Left" Height="82" Margin="0,229,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Click="PrintOrderCheque_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/print.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="DeleteOrder_button"  Grid.Column="6" HorizontalAlignment="Left" Margin="1,227,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Grid.RowSpan="2" Height="84" BorderBrush="{x:Null}" Click="DeleteOrder_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="UI_image/deleteGood.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
