@@ -1,5 +1,5 @@
 # (NOGS) Network Of Grocery Stores - Using the SQL Database
-![](/Readme images/github-readme-image-emblem.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-emblem.jpg)
 
 >The task of network stores is the timely delivery of goods needed by residents. To do this, they need a single information system in which the proceeds and subsequent sales of goods will be tracked. 
 
@@ -21,7 +21,6 @@
 - [Getting Started](#markdown-header-getting-started)
   - [Clone the Repository](#markdown-header-clone)
   - [Prerequisites](#markdown-prerequisites)
-  - [Installation](#markdown-header-installation)
 - [Built With](#markdown-header-built-with)
 - [UML Diagrams](#markdown-header-uml-diagrams)
   - [Component Diagram](#markdown-header-component-diagram)
@@ -37,9 +36,8 @@
 #### Clone the Repository
  As usual, you get started by cloning the project to your local machine:
  ```sh
- $ git://github.com/
+ $ git clone https://github.com/OlenkaA/NetworkOfGroceryStores.git
  ```
- 
  
 <a name="markdown-prerequisites"></a>
 #### Prerequisites 
@@ -48,19 +46,12 @@
 3. Microsoft SQL Server 2012
 4. Git
 
-
-<a name="markdown-header-installation"></a>
-#### Installation
-
-
-
-
 <a name="markdown-header-built-with"></a>
 ## Built With
 Development environment for this application is `Microsoft Visual Studio .NET 2017`.
 
 This project use the following `libraries`:
-* 
+* EntityFramework v6 
 
 
 Used `technologys` and `tools`:
@@ -76,35 +67,35 @@ Used `technologys` and `tools`:
 
 <a name="#markdown-header-component-diagram"></a>
 #### Component Diagram
-![](/Readme UML/github-readme-image-component-diagram.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20UML/github-readme-image-component-diagram.png)
 
 <a name="markdown-header-use-case-diagram"></a>
 #### Use Case Diagram
-![](/Readme UML/github-readme-image-use-case-diagram.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20UML/github-readme-image-use-case-diagram.jpg)
 
 
 
 <a name="markdown-header-project-screen-shots"></a>
 ## Project Screen Shots
 Get started with the program ***NOGS***. Authorization is required for successful work with the program: 
-![](/Readme images/github-readme-image-autorization.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-autorization.PNG)
 
 The main window of the program consists of a toolbar, a workspace and check information:
-![](/Readme images/github-readme-image-program-main-window.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-program-main-window.PNG)
 
 The application provides ability to view products available in the store. For this there is a convenient grouping of all products by category:
-![](/Readme images/github-readme-image-all-categories.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-all-categories.PNG)
 
 The application provides an opportunity to review employees, customers, products and promotions:
-![](/Readme images/github-readme-image-all-products.png)
-![](/Readme images/github-readme-image-all-workers.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-all-products.PNG)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-all-workers.PNG)
 
 The application provides the ability to search: 
-![](/Readme images/github-readme-image-search-products.png)
-![](/Readme images/github-readme-image-shares.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-search-products.PNG)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-shares.PNG)
 
 Also, there is the ability to add, edit and delete data from a database of new products, stocks, customers, employees, stores:
-![](/Readme images/github-readme-image-new-product.png)
+![](https://raw.githubusercontent.com/OlenkaA/NetworkOfGroceryStores/master/Readme%20images/github-readme-image-new-product.PNG)
 
 The complete user manual can be found [here].
 
